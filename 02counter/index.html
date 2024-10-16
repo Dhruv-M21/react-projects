@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <style>
+      #intro {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: x-large;
+        color: blanchedalmond;
+      }
+      #display {
+        display: flex;
+        border :2px solid blanchedalmond;
+        padding: 0%;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        /* margin: 20%; */ 
+        /* margin-top: 2px; */
+      }
+
+      #display h4{
+        padding: 1%;
+      }
+
+      #root button{
+          margin: 10px;
+          padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="intro">COUNTER BUTTON PRESS DEMONSTRATION</div>
+    <div id="display">
+      <h4 >MAX VALUE :<p id="max"></p> </h4>
+      <h4 >MIN VALUE :<p id="min"></p></h4>
+    </div>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const maxValue = 20;
+      const minValue = 0;
+      document.getElementById('max').innerHTML = maxValue;
+      document.getElementById('min').innerHTML = minValue;
+
+    </script>
+  </body>
+</html>
